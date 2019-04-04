@@ -33,6 +33,7 @@ ALLOWED_HOSTS = target_allowed_hosts
 
 INSTALLED_APPS = [
     'joonmoo.apps.JoonmooConfig',
+    'MCpolls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
