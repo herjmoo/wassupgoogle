@@ -32,6 +32,7 @@ ALLOWED_HOSTS = target_allowed_hosts
 # Application definition
 
 INSTALLED_APPS = [
+    'jongPoll.apps.jongPollConfig',
 		'jina.apps.JinaConfig',
     'joonmoo.apps.JoonmooConfig',
     'MCpolls.apps.PollsConfig',
@@ -120,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'US/Pacific'
+TIME_ZONE = 'Pacific/Fiji'
 
 USE_I18N = True
 
