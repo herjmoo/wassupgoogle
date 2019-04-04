@@ -32,6 +32,7 @@ ALLOWED_HOSTS = target_allowed_hosts
 # Application definition
 
 INSTALLED_APPS = [
+		'jina.apps.JinaConfig',
     'joonmoo.apps.JoonmooConfig',
     'MCpolls.apps.PollsConfig',
     'django.contrib.admin',
