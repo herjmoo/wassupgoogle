@@ -32,6 +32,7 @@ ALLOWED_HOSTS = target_allowed_hosts
 # Application definition
 
 INSTALLED_APPS = [
+		'jina.apps.JinaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
