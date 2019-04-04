@@ -32,6 +32,7 @@ ALLOWED_HOSTS = target_allowed_hosts
 # Application definition
 
 INSTALLED_APPS = [
+    'joonmoo.apps.JoonmooConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
