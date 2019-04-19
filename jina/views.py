@@ -6,7 +6,8 @@ from django.views import generic
 from .models import Choice, Question
 
 class IndexView(generic.ListView):
-    template_name = 'jina/index.html'
+    #template_name = 'jina/index.html'
+    template_name = 'jina/index_all.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
@@ -17,6 +18,7 @@ class IndexView(generic.ListView):
 class DetailView(generic.DetailView):
     model = Question
     template_name = 'jina/detail.html'
+
 
 
 class ResultsView(generic.DetailView):
