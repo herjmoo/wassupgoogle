@@ -1,9 +1,21 @@
 {% if latest_question_list %}
-    <ul>
+<style>
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+<h1> !! VOTE PLEASE!!</h1>
+    <ol>
     {% for question in latest_question_list %}
         <li><a href="/MCpolls/{{ question.id }}/">{{ question.question_text }}</a></li>
+        <ul>
+        {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }}</li>
+        {% endfor %}
+        </ul>
     {% endfor %}
-    </ul>
+    </ol>
 {% else %}
     <p>No MCpolls are available.</p>
 {% endif %}
